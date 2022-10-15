@@ -19,7 +19,7 @@ export class TweetsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.tweetsService.findOne(+id);
+    return this.tweetsService.findOne(id);
   }
 
   @Patch(':id')
